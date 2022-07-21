@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Var */
+:root{
+
+  /* Colors */
+  --black-color: #2f2e41;
+  --gray-color: #c2c2c2;
+  --white-color: #fff;
+  --green-color: #00bfa6;
+  
+  /* Fonts */
+  --Jet-font: 'JetBrains Mono', monospace;
+  --Open-font: 'Open Sans', sans-serif;
+}
+/* Reset */
+a{
+  text-decoration: none;
+  color: var(--white-color);
+  font-family: var(--Jet-font);
+  font-weight: 500;
+  font-size: 14px;
+  transition: 200ms;
+}
+li{
+  list-style: none;
+  
+}
+
+body{
+  background-color: var(--black-color);
+  min-height: 100vh;
+}
+.container{
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.logo:hover{
+  position: relative;
+  bottom: 2px;
+}
+nav ul{
+  display: flex;
+  gap: 64px;
+}
+nav ul li a:hover{
+  color: var(--green-color);
+  position: relative;
+  bottom: 2px;
+
+}
+
+/* Main */
+main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 160px;
+}
+section{
+  width: 605px;
+  text-align: center;
+  color: var(--white-color);
+}
+section h1{
+  font-size: 36px;
+  font-family: var(--Jet-font);
+  font-weight: bold;
+} 
+span{
+  color: var(--green-color);
+  font-weight: bold;
+}
+section h1 + p{
+  margin-top: 60px;
+}
+section p {
+  font-family: var(--Open-font);
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--gray-color);
+  line-height: 28px;
+}
+
+/* Footer */
+footer{
+  text-align: center;
+  color: var(--white-color);
+  font-family: var(--Jet-font);
+  font-weight: 500;
+}
+footer p{
+  padding-top: 25px;
+  font-size: 14px;
+  font-weight: 500;
+}
+footer p a:hover{
+  color: var(--green-color);
+}
+footer .line{
+  width: 568px;
+  height: 0px;
+  border: 1px solid #00bfa6;
+  margin: 0 auto;
+}
+#cadeado{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+#cadeado:hover{
+  bottom: 20px;
+  left: 20px;
+}
+.flip-scale-up-ver {
+	-webkit-animation: flip-scale-up-ver 800ms linear both;
+	        animation: flip-scale-up-ver 800ms linear both;
+}
+
+/**
+ * ----------------------------------------
+ * animation flip-scale-up-ver
+ * ----------------------------------------
+ */
+ @-webkit-keyframes flip-scale-up-ver {
+  0% {
+    -webkit-transform: scale(1) rotateY(0);
+            transform: scale(1) rotateY(0);
+  }
+  50% {
+    -webkit-transform: scale(3) rotateY(90deg);
+            transform: scale(3) rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateY(180deg);
+            transform: scale(1) rotateY(180deg);
+  }
+}
+@keyframes flip-scale-up-ver {
+  0% {
+    -webkit-transform: scale(1) rotateY(0);
+            transform: scale(1) rotateY(0);
+  }
+  50% {
+    -webkit-transform: scale(3) rotateY(90deg);
+            transform: scale(3) rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateY(180deg);
+            transform: scale(1) rotateY(180deg);
+  }
+}
